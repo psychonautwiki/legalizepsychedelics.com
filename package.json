@@ -1,0 +1,8 @@
+{
+  "devDependencies": {
+    "cssnano": "^4.0.5"
+  },
+  "dependencies": {
+    "jquery": "^3.3.1"
+  }
+}
