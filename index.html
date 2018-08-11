@@ -1,192 +1,168 @@
 <!DOCTYPE html>
-<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
-<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
-<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
-<!--[if (gte IE 9)|!(IE)]><!-->
-<html lang="en"> <!--<![endif]-->
-
+<html lang="en">
 	<head>
-
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-
-		<!-- BASIC INFO -->
+		<meta charset="utf-8"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
 		<title>Legalize Psychedelics</title>
-		<meta name="author" content="Seth Lesky">
-		<meta name="keywords" content="legalize psychedelics, psychedelics">
-		<meta name="description" content="Psychedelics hold enormous medicinal, therapeutic and spiritual potential. We believe exploring consciousness isn't a crime. It's a human right.">
+		<meta name="author" content="Seth Lesky"/>
+		<meta name="keywords" content="legalize psychedelics, psychedelics"/>
+		<meta name="description" content="Psychedelics hold enormous medicinal, therapeutic and spiritual potential. We believe exploring consciousness isn't a crime. It's a human right."/>
+		<link rel="icon" href="images/favicons/favicon.ico"/>
+		<link rel="apple-touch-icon" href="images/favicons/apple-touch-icon.png"/>
 
-		<!-- FAVICONS -->
-		<link rel="icon" href="images/favicons/favicon.ico">
-		<link rel="apple-touch-icon" href="images/favicons/apple-touch-icon.png">
+        <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Montserrat:400,700"/>
+		<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800"/>
 
-		<!-- CSS
-		================================= -->
-
-		<!-- GOOGLE FONTS -->
-		<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Montserrat:400,700">
-		<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800">
-
-		<!-- LIBRARIES CSS -->
-		<link rel="stylesheet" href="css/bootstrap.min.css">
-
-		<!-- SPECIFIC CSS -->
-		<link rel="stylesheet" href="css/style.css">
-
-		<link id="color-css" rel="stylesheet" href="css/colors/orange.css">
+        <link rel="stylesheet" href="css/bootstrap.min.css"/>
+        <link rel="stylesheet" href="css/colors/orange.css"/>
+		<link rel="stylesheet" href="css/style.css"/>
 
 		<style>
-			.hero-heading img {
+			.hero-section .hero-heading img {
 				max-width: 30vw;
 			}
 
-			.hero-heading .hero-tagline {
+			.hero-section .hero-heading .hero-tagline {
 				margin: 1em 0;
 			}
+
+			.hero-section {
+				height: 100vh;
+			}
+
+			.hero-content, .hero-content-inner {
+				height: 90vh;
+			}
+
+			@media only screen and (max-width: 600px) {
+				body {
+					background-color: lightblue;
+				}
+            }
+            
+            .tag {
+                position: relative;
+                line-height: 1.4;
+                font-size: 0.8em;
+                padding: 0;
+                margin: .5em auto 2em auto;
+                text-align: center;
+                color: #e6e6e6;
+            }
+
+            .tag img {
+                margin: 0 0.5rem;
+            }
+
+            .tag img.pw {
+                width: 30px;
+                
+                margin-bottom: -.7em;
+            }
 		</style>
-
 	</head>
-
-	<body class="enable-animations enable-preloader">
-
+	<body>
 		<div id="document" class="document">
-
-			<!-- HEADER
-			================================= -->
 			<header id="header" class="header-section section section-dark navbar navbar-fixed-top">
-
 				<div class="container-fluid">
-
 					<div class="navbar-header navbar-left">
-
-						<!-- RESPONSIVE MENU BUTTON -->
 						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navigation">
 							<span class="sr-only">Toggle navigation</span>
 							<span class="icon-bar"></span>
 							<span class="icon-bar"></span>
 							<span class="icon-bar"></span>
 						</button>
-
-						<!-- HEADER LOGO -->
 						<a class="navbar-logo navbar-brand anchor-link" href="#hero">
-							<img src="images/logo-small.png" alt="Legalize Psychedelics">
-							<!-- <span>Legalize Psychedelics</span> -->
+							<img src="images/logo-small.png" alt="Legalize Psychedelics"/>
 						</a>
-
 					</div>
-
 					<nav id="navigation" class="navigation navbar-collapse collapse navbar-right">
-
-						<!-- NAVIGATION LINKS -->
 						<ul id="header-nav" class="nav navbar-nav">
-
-							<li><a href="#hero" class="hidden">Top</a></li>
-
-							<li><a href="#about">Learn</a></li>
-							<li><a href="#people">People</a></li>
-							<li><a href="#podcasts">Podcasts</a></li>
-							<li><a href="#websites">Sites</a></li>
-							<li><a href="#books">Books</a></li>
-							<li><a href="#documentaries">Documentaries</a></li>
-
-							<li class="header-action-button"><a href="#get-involved" class="btn btn-primary"><i class="fa fa-thumbs-o-up" style="font-size: 18px; padding-right: 5px;"></i>Get Involved</a></li>
-
+							<li>
+								<a href="#hero" class="hidden">Top</a>
+							</li>
+							<li>
+								<a href="#about">Learn</a>
+							</li>
+							<li>
+								<a href="#people">People</a>
+							</li>
+							<li>
+								<a href="#podcasts">Podcasts</a>
+							</li>
+							<li>
+								<a href="#websites">Sites</a>
+							</li>
+							<li>
+								<a href="#books">Books</a>
+							</li>
+							<li>
+								<a href="#documentaries">Documentaries</a>
+							</li>
+							<li class="header-action-button">
+								<a href="#get-involved" class="btn btn-primary">
+									<i class="fa fa-thumbs-o-up" style="font-size: 18px; padding-right: 5px;"></i>Get Involved
+								
+								
+								
+								
+								
+								
+								
+								</a>
+							</li>
 						</ul>
-
 					</nav>
-
 				</div>
-
 			</header>
-
-			<!-- HERO
-			================================= -->
 			<section id="hero" class="hero-section hero-layout-simple section section-dark">
-
 				<div class="section-background">
-					<!-- IMAGE BACKGROUND -->
 					<div class="section-background-image parallax" data-stellar-ratio="0.4">
-						<img src="images/mushroom.jpg" alt="" style="opacity: 0.4;">
+						<img src="images/mushroom.jpg" alt="" style="opacity: 0.4;"/>
 					</div>
 				</div>
-
 				<div class="container">
-
-					<div class="hero-content">
-						<div class="hero-content-inner">
-
-							<div class="table-row row">
-								<div class="table-cell col-md-12 text-center">
-
-									<div class="hero-heading">
-
-										<img src="images/logo.svg" />
-
-										<p class="hero-tagline">
-											Psychedelics have enormous medicinal, therapeutic and spiritual potential. <br>We believe the exploration of consciousness is a human right.
-										</p>
-
-									</div>
-
-									<p class="hero-buttons">
-										<a href="#about" class="learn-btn btn btn-lg btn-primary">LEARN MORE</a>
-									</p>
-
-								</div>
-							</div>
-
-						</div>
+					<div class="hero-heading">
+						<img src="images/logo.svg" />
+						<p class="hero-tagline">
+							Psychedelics have enormous medicinal, therapeutic and spiritual potential.
+							
+							<br/>We believe the exploration of consciousness is a human right.
+						
+						</p>
 					</div>
-
+					<p class="hero-buttons">
+						<a href="#about" class="learn-btn btn btn-lg btn-primary">LEARN MORE</a>
+					</p>
 				</div>
-
 			</section>
-
-			<!-- HEADLINE
-			================================= -->
 			<section id="headline" class="headline-section section-dark section top-quote">
-
 				<div class="container">
-
 					<h2 class="section-heading text-center hidden">Tagline</h2>
-
 					<div class="row">
 						<div class="col-md-10 col-md-offset-1">
-
 							<p class="headline-text">
 								<em>"Taking LSD was a profound experience, one of the most important things in my life. LSD shows you that there’s another side to the coin, and you can’t remember it when it wears off, but you know it. It reinforced my sense of what was important creating great things instead of making money, putting things back into the stream of history and of human consciousness as much as I could."</em>
-								<br>
+								<br/>
 								<strong>- Steve Jobs</strong>
 							</p>
-
 						</div>
 					</div>
-
 				</div>
-
 			</section>
-
-			<!-- DESCRIPTION
-			================================= -->
 			<section id="about" class="about-section section">
-
 				<div class="container">
-
 					<h2 class="section-heading text-center">Know the facts</h2>
 					<p class="lead text-left above-pic">
 						Psychedelics are not only much safer than perscription medication, tobacco and alcohol, but have powerful physical, psychological and spiritual healing properties that have been known about since early human history.
 					</p>
 					<div class="about-row row">
-
-						<!-- DESCRIPTION IMAGE -->
 						<div class="about-image col-md-6" data-animation="fadeIn">
-							<img src="images/psyart.jpg" alt="Description Image">
+							<img src="images/psyart.jpg" alt="Description Image"/>
 							<p style="padding-top: 10px;">
 								<a href="http://www.ayahuascacommunity.com/anderson-debernardi/">Painting by Anderson Debernadi</a>
 							</p>
 						</div>
-
-						<!-- DESCRIPTION TEXT -->
 						<div class="about-text col-md-6">
 							<p>
 								<strong>Psychedelics provide the user with an altered perspective of themselves and the universe.</strong>  One of the main effects is to reduce the “sense of self”, opening the mind up to perceive aspects of themselves from a ‘third person’ point of view; objectively analyze situations in themselves and their lives; and - conversely - place themselves in a different subjective view in these same situations.
@@ -200,65 +176,50 @@
 							</p>
 							<ul class="icon-list">
 								<li>
-									<!-- <span class="icon-list-icon fa fa-hand-o-up" data-animation="bounceIn"></span> -->
-									<img src="images/icons/cognitive.png" class="icon-list-icon">
+									<img src="images/icons/cognitive.png" class="icon-list-icon"/>
 									<h4 class="icon-list-title">Cognitive Liberty</h4>
 									<p>Every individual should have the right to alter, and explore their consciousness as they see fit.</p>
 								</li>
 								<li>
-									<!-- <span class="icon-list-icon fa fa-heart-o" data-animation="bounceIn"></span> -->
-									<img src="images/icons/healthwellness.png" class="icon-list-icon">
+									<img src="images/icons/healthwellness.png" class="icon-list-icon"/>
 									<h4 class="icon-list-title">Health and Wellness</h4>
 									<p>The physical and psychological benifits of the psychedelic experience far outway their risks.</p>
 								</li>
 								<li>
-									<!-- <span class="icon-list-icon fa fa-lightbulb-o" data-animation="bounceIn"></span> -->
-									<img src="images/icons/scientific_inquiry.png" class="icon-list-icon">
+									<img src="images/icons/scientific_inquiry.png" class="icon-list-icon"/>
 									<h4 class="icon-list-title">Scientific Inquiry</h4>
 									<p>The current scheduling of psychedelics is in direct contradiction to accepted science. Furthermore, it makes research and scientific inquiry extremely difficult.</p>
 								</li>
 								<li>
-									<!-- <span class="icon-list-icon fa fa-thumbs-o-down" data-animation="bounceIn"></span> -->
-									<img src="images/icons/drugwar.png" class="icon-list-icon">
+									<img src="images/icons/drugwar.png" class="icon-list-icon"/>
 									<h4 class="icon-list-title">Failed Drug War</h4>
 									<p>Treating drug use as a criminal issue instead of a public health issue has had a devastating impact on all aspects of society. </p>
 								</li>
 							</ul>
 						</div>
-
 					</div>
-
 				</div>
-
 			</section>
-
 			<section id="portfolio" class="portfolio-section section">
-
 				<div class="container-fluid">
-
 					<h2 class="section-heading text-center">Learn about Psychedelics</h2>
-
 					<div class="portfolio-row row">
-
-						<!-- PORTFOLIO - ITEM 1 -->
 						<div class="col-sm-6 col-md-3" data-animation="fadeIn">
 							<a target="_blank" href="https://en.wikipedia.org/wiki/MDMA">
 								<div class="portfolio-item">
-									<img class="portfolio-item-picture" src="images/mdma.jpg" alt="">
+									<img class="portfolio-item-picture" src="images/mdma.jpg" alt=""/>
 									<div class="portfolio-item-overlay"></div>
 									<div class="portfolio-item-text">
 										<h4 class="portfolio-item-title">MDMA</h4>
 										<p class="portfolio-item-description">MAPS is currently funding pilot studies investigating the use of MDMA in PTSD therapy and social anxiety therapy for autistic adults.</p>
 									</div>
 								</div>
-							</p>
+							</a>
 						</div>
-
-						<!-- PORTFOLIO - ITEM 2 -->
 						<div class="col-sm-6 col-md-3" data-animation="fadeIn">
 							<a target="_blank" href="https://en.wikipedia.org/wiki/N,N-Dimethyltryptamine">
 								<div class="portfolio-item">
-									<img class="portfolio-item-picture" src="images/dmt.jpg" alt="">
+									<img class="portfolio-item-picture" src="images/dmt.jpg" alt=""/>
 									<div class="portfolio-item-overlay"></div>
 									<div class="portfolio-item-text">
 										<h4 class="portfolio-item-title">DMT</h4>
@@ -267,44 +228,36 @@
 								</div>
 							</a>
 						</div>
-
 						<div class="hidden-md hidden-lg clear"></div>
-
-						<!-- PORTFOLIO - ITEM 3 -->
 						<div class="col-sm-6 col-md-3" data-animation="fadeIn">
 							<a target="_blank" href="https://en.wikipedia.org/wiki/Lysergic_acid_diethylamide">
 								<div class="portfolio-item">
-									<img class="portfolio-item-picture" src="images/lsd.jpg" alt="">
+									<img class="portfolio-item-picture" src="images/lsd.jpg" alt=""/>
 									<div class="portfolio-item-overlay"></div>
 									<div class="portfolio-item-text">
 										<h4 class="portfolio-item-title">LSD</h4>
 										<p class="portfolio-item-description">Scientists belief LSD (lysergic acid diethylamide) can be used to treat addictions, depression and chronic pain.</p>
 									</div>
 								</div>
-								</a>
+							</a>
 						</div>
-
-						<!-- PORTFOLIO - ITEM 4 -->
 						<div class="col-sm-6 col-md-3" data-animation="fadeIn">
 							<a href="https://en.wikipedia.org/wiki/Psilocybin" target="_blank">
 								<div class="portfolio-item">
-									<img class="portfolio-item-picture" src="images/psil.jpg" alt="">
+									<img class="portfolio-item-picture" src="images/psil.jpg" alt=""/>
 									<div class="portfolio-item-overlay"></div>
 									<div class="portfolio-item-text">
 										<h4 class="portfolio-item-title">Psilicybin</h4>
 										<p class="portfolio-item-description">Psilicybin, the active ingredient in magic mushrooms has been shown to treat anxiety and "existential distress" in the terminally ill.</p>
 									</div>
 								</div>
-								</a>
+							</a>
 						</div>
-
 						<div class="clear"></div>
-
-						<!-- PORTFOLIO - ITEM 5 -->
 						<div class="col-sm-6 col-md-3" data-animation="fadeIn">
 							<a target="_blank" href="https://en.wikipedia.org/wiki/Salvia_divinorum#Brett.27s_law">
 								<div class="portfolio-item">
-									<img class="portfolio-item-picture" src="images/salvia.jpg" alt="">
+									<img class="portfolio-item-picture" src="images/salvia.jpg" alt=""/>
 									<div class="portfolio-item-overlay"></div>
 									<div class="portfolio-item-text">
 										<h4 class="portfolio-item-title">Salvia</h4>
@@ -313,12 +266,10 @@
 								</div>
 							</a>
 						</div>
-
-						<!-- PORTFOLIO - ITEM 6 -->
 						<div class="col-sm-6 col-md-3" data-animation="fadeIn">
 							<a href="https://en.wikipedia.org/wiki/Ketamine" target="_blank">
 								<div class="portfolio-item">
-									<img class="portfolio-item-picture" src="images/ketamine.jpg" alt="">
+									<img class="portfolio-item-picture" src="images/ketamine.jpg" alt=""/>
 									<div class="portfolio-item-overlay"></div>
 									<div class="portfolio-item-text">
 										<h4 class="portfolio-item-title">Ketamine</h4>
@@ -327,14 +278,11 @@
 								</div>
 							</a>
 						</div>
-
 						<div class="hidden-md hidden-lg clear"></div>
-
-						<!-- PORTFOLIO - ITEM 7 -->
 						<div class="col-sm-6 col-md-3" data-animation="fadeIn">
 							<a href="https://en.wikipedia.org/wiki/Ibogaine" target="_blank">
 								<div class="portfolio-item">
-									<img class="portfolio-item-picture" src="images/iboga.jpg" alt="">
+									<img class="portfolio-item-picture" src="images/iboga.jpg" alt=""/>
 									<div class="portfolio-item-overlay"></div>
 									<div class="portfolio-item-text">
 										<h4 class="portfolio-item-title">Iboga</h4>
@@ -343,12 +291,10 @@
 								</div>
 							</a>
 						</div>
-
-						<!-- PORTFOLIO - ITEM 8 -->
 						<div class="col-sm-6 col-md-3" data-animation="fadeIn">
 							<a href="https://en.wikipedia.org/wiki/Cannabis" target="_blank">
 								<div class="portfolio-item">
-									<img class="portfolio-item-picture" src="images/cannabis.jpg" alt="">
+									<img class="portfolio-item-picture" src="images/cannabis.jpg" alt=""/>
 									<div class="portfolio-item-overlay"></div>
 									<div class="portfolio-item-text">
 										<h4 class="portfolio-item-title">Cannabis</h4>
@@ -357,124 +303,81 @@
 								</div>
 							</a>
 						</div>
-
 					</div>
-
-
 				</div>
-
 			</section>
-
-			<!-- BENEFITS
-			================================= -->
 			<section id="benefits" class="benefits-section section-gray section">
-
 				<div class="container">
-
 					<h2 class="section-heading text-center">The Benefits</h2>
-
 					<div class="benefits-row row">
-
-						<!-- BENEFIT 1 -->
 						<div class="col-sm-6 col-md-4">
 							<div class="benefit">
-								<img src="images/icons/depression.png" data-animation="bounceIn">
+								<img src="images/icons/depression.png" data-animation="bounceIn"/>
 								<h4 class="benefit-title">Treatment of depression</h4>
 								<p class="benefit-description">For decades psychedelics have been used in clinical studies, private therapy, and at home to alleviate depression.</p>
 							</div>
 						</div>
-
-						<!-- BENEFIT 2 -->
 						<div class="col-sm-6 col-md-4">
 							<div class="benefit">
-								<img src="images/icons/anxiety.png" data-animation="bounceIn">
+								<img src="images/icons/anxiety.png" data-animation="bounceIn"/>
 								<h4 class="benefit-title">Treatment of anxiety</h4>
 								<p class="benefit-description">Psychedelics have been known to alleviate feelings of anxiety, helping to identify root causes, often enabling resolution.</p>
 							</div>
 						</div>
-
 						<div class="hidden-md hidden-lg clear"></div>
-
-						<!-- BENEFIT 3 -->
 						<div class="col-sm-6 col-md-4">
 							<div class="benefit">
-								<img src="images/icons/creative.png" data-animation="bounceIn">
+								<img src="images/icons/creative.png" data-animation="bounceIn"/>
 								<h4 class="benefit-title">Creative Uses</h4>
 								<p class="benefit-description">Psychedelics can be helpful to artists working on creatieve projects as well as problem sovling in scientific domains.</p>
 							</div>
 						</div>
-
 						<div class="hidden-sm clear"></div>
-
-						<!-- BENEFIT 4 -->
 						<div class="col-sm-6 col-md-4">
 							<div class="benefit">
-								<img src="images/icons/ptsd.png" data-animation="bounceIn">
+								<img src="images/icons/ptsd.png" data-animation="bounceIn"/>
 								<h4 class="benefit-title">Helps treat PTSD</h4>
 								<p class="benefit-description">Research trials with MDMA are showing incredible results in treating PTSD in veterans.</p>
 							</div>
 						</div>
-
 						<div class="hidden-md hidden-lg clear"></div>
-
-						<!-- BENEFIT 5 -->
 						<div class="col-sm-6 col-md-4">
 							<div class="benefit">
-								<img src="images/icons/addiction.png" data-animation="bounceIn">
+								<img src="images/icons/addiction.png" data-animation="bounceIn"/>
 								<h4 class="benefit-title">Can treat addiction</h4>
 								<p class="benefit-description"> Ibogaine has been helpful treating addiction to opiates as well as alcohol, methamphetamine and nicotine.</p>
 							</div>
 						</div>
-
-						<!-- BENEFIT 6 -->
 						<div class="col-sm-6 col-md-4">
 							<div class="benefit">
-							<img src="images/icons/endoflife.png" data-animation="bounceIn">
+								<img src="images/icons/endoflife.png" data-animation="bounceIn"/>
 								<h4 class="benefit-title">End of life care</h4>
 								<p class="benefit-description">Psychedlics enable people to confront their deepest fears and anxieties with rare compassion and understanding.</p>
 							</div>
 						</div>
-
 					</div>
-
 				</div>
-
 			</section>
-
 			<section id="closing" class="closing-section section-dark section">
-
 				<div class="section-background">
-
-					<!-- IMAGE BACKGROUND -->
 					<div class="section-background-image parallax" data-stellar-ratio="0.4">
-						<img src="images/backgrounds/closing-bg.jpg" alt="" style="opacity: 0.15;">
+						<img src="images/backgrounds/closing-bg.jpg" alt="" style="opacity: 0.15;"/>
 					</div>
-
+					<div class="container">
+						<h3 class="closing-shout">Changing 50 years of misinformation and turning around a failed drug war happens one conversation at a time.</h3>
+						<div class="closing-buttons" data-animation="tada">
+							<a href="http://society6.com/psychedelicchat" target="_blank" class="btn btn-lg btn-primary">start the conversation</a>
+						</div>
+					</div>
 				</div>
-
-				<div class="container">
-
-					<h3 class="closing-shout">Changing 50 years of misinformation and turning around a failed drug war happens one conversation at a time.</h3>
-
-					<div class="closing-buttons" data-animation="tada"><a href="http://society6.com/psychedelicchat" target="_blank" class="btn btn-lg btn-primary">start the conversation</a></div>
-
-				</div>
-
 			</section>
-
-
 			<section id="people" class="team-section section">
-
 				<div class="container-fluid">
-
 					<h2 class="section-heading text-center">Who Supports Psychedelics?</h2>
-
 					<div class="team-row row">
-
-						<!-- TEAM MEMBER 1 -->
 						<div class="col-sm-4 col-lg-2" data-animation="fadeIn">
 							<div class="team-member">
-								<img class="team-member-picture" src="images/fadiman.jpg" alt="">
+								<img class="team-member-picture" src="images/fadiman.jpg" alt=""/>
 								<div class="team-member-text">
 									<h4 class="team-member-name">James Fadiman, Ph.D</h4>
 									<div class="team-member-position">Psychologist &amp; Author</div>
@@ -482,11 +385,9 @@
 								</div>
 							</div>
 						</div>
-
-						<!-- TEAM MEMBER 2 -->
 						<div class="col-sm-4 col-lg-2" data-animation="fadeIn">
 							<div class="team-member even">
-								<img class="team-member-picture" src="images/doblin.jpg" alt="">
+								<img class="team-member-picture" src="images/doblin.jpg" alt=""/>
 								<div class="team-member-text">
 									<h4 class="team-member-name">Rick Doblin, Ph.D</h4>
 									<div class="team-member-position">MAPS Founder &amp; Director</div>
@@ -494,10 +395,9 @@
 								</div>
 							</div>
 						</div>
-
 						<div class="col-sm-4 col-lg-2" data-animation="fadeIn">
 							<div class="team-member">
-								<img class="team-member-picture" src="images/dmkenna.jpg" alt="">
+								<img class="team-member-picture" src="images/dmkenna.jpg" alt=""/>
 								<div class="team-member-text">
 									<h4 class="team-member-name">Dennis McKenna</h4>
 									<div class="team-member-position">Researcher &amp; Author</div>
@@ -506,10 +406,9 @@
 								</div>
 							</div>
 						</div>
-
 						<div class="col-sm-4 col-lg-2" data-animation="fadeIn">
 							<div class="team-member even">
-								<img class="team-member-picture" src="images/shulgin.jpg" alt="">
+								<img class="team-member-picture" src="images/shulgin.jpg" alt=""/>
 								<div class="team-member-text">
 									<h4 class="team-member-name">Alexander Shulgin</h4>
 									<div class="team-member-position">Biochemist &amp; Author</div>
@@ -517,10 +416,9 @@
 								</div>
 							</div>
 						</div>
-
 						<div class="col-sm-4 col-lg-2" data-animation="fadeIn">
 							<div class="team-member odd">
-								<img class="team-member-picture" src="images/strassman.jpg" alt="">
+								<img class="team-member-picture" src="images/strassman.jpg" alt=""/>
 								<div class="team-member-text">
 									<h4 class="team-member-name">Rick Strassman</h4>
 									<div class="team-member-position">Medical Doctor &amp; Author</div>
@@ -528,10 +426,9 @@
 								</div>
 							</div>
 						</div>
-
 						<div class="col-sm-4 col-lg-2" data-animation="fadeIn">
 							<div class="team-member even">
-								<img class="team-member-picture" src="images/mkenna.jpg" alt="">
+								<img class="team-member-picture" src="images/mkenna.jpg" alt=""/>
 								<div class="team-member-text">
 									<h4 class="team-member-name">Terence McKenna</h4>
 									<div class="team-member-position">Author</div>
@@ -542,66 +439,50 @@
 					</div>
 				</div>
 			</section>
-
 			<section id="numbers" class="numbers-section section-dark section">
-
 				<div class="section-background">
-
-					<!-- IMAGE BACKGROUND -->
 					<div class="section-background-image parallax" data-stellar-ratio="0.4">
-						<img src="images/pills.jpg" style="opacity: 0.2;">
+						<img src="images/pills.jpg" style="opacity: 0.2;"/>
 					</div>
-
 				</div>
-
 				<div class="container">
-
 					<h2 class="section-heading text-center">Drug Deaths Each Year</h2>
-
 					<div class="numbers-row row">
-
-						<!-- NUMBERS - ITEM 2 -->
 						<div class="col-sm-6 col-md-3">
 							<div class="numbers-item">
-								<div class="numbers-item-counter"><span class="counter-up">556,000</span></div>
+								<div class="numbers-item-counter">
+									<span class="counter-up">556,000</span>
+								</div>
 								<div class="numbers-item-caption">Tobacco</div>
 							</div>
 						</div>
-
-						<!-- NUMBERS - ITEM 1 -->
 						<div class="col-sm-6 col-md-3">
 							<div class="numbers-item">
-								<div class="numbers-item-counter"><span class="counter-up">66,427</span></div>
+								<div class="numbers-item-counter">
+									<span class="counter-up">66,427</span>
+								</div>
 								<div class="numbers-item-caption">Alcohol</div>
 							</div>
 						</div>
-
-
-						<!-- NUMBERS - ITEM 3 -->
 						<div class="col-sm-6 col-md-3">
 							<div class="numbers-item">
-								<div class="numbers-item-counter"><span class="counter-up">29,471</span></div>
+								<div class="numbers-item-counter">
+									<span class="counter-up">29,471</span>
+								</div>
 								<div class="numbers-item-caption">Pharmaceuticals</div>
 							</div>
 						</div>
-
-						<!-- NUMBERS - ITEM 4 -->
 						<div class="col-sm-6 col-md-3">
 							<div class="numbers-item">
-								<div class="numbers-item-counter"><span class=""> &lt; 20</span></div>
+								<div class="numbers-item-counter">
+									<span class=""> &lt; 20</span>
+								</div>
 								<div class="numbers-item-caption">Psychedelics*</div>
 							</div>
 						</div>
-
 					</div>
-
 				</div>
-
 			</section>
-
-
-		<!-- Podcasts
-			================================= -->
 			<section id="podcasts" class="section section-gray section-listing">
 				<div class="container-fluid">
 					<h2 class="section-heading text-center">Podcasts</h2>
@@ -609,7 +490,7 @@
 						<div class="layout-item col-sm-4 col-lg-2">
 							<div class="layout-img">
 								<a href="http://www.tinktinkclub.com/">
-									<img target="_blank" src="images/podcasts/tink.jpg" alt="Tink Tink Club">
+									<img target="_blank" src="images/podcasts/tink.jpg" alt="Tink Tink Club"/>
 									<span class="new">Tink Tink Club</span>
 								</a>
 							</div>
@@ -617,7 +498,7 @@
 						<div class="layout-item col-sm-4 col-lg-2">
 							<div class="layout-img">
 								<a target="_blank" href="http://podcasts.joerogan.net/">
-									<img src="images/podcasts/rogan.jpg" alt="Fullscreen Slider">
+									<img src="images/podcasts/rogan.jpg" alt="Fullscreen Slider"/>
 									<span class="new">The Joe Rogan Experience</span>
 								</a>
 							</div>
@@ -625,7 +506,7 @@
 						<div class="layout-item col-sm-4 col-lg-2">
 							<div class="layout-img">
 								<a target="_blank" href="http://duncantrussell.com/">
-									<img src="images/podcasts/duncan.jpg" alt="Fullscreen Slider">
+									<img src="images/podcasts/duncan.jpg" alt="Fullscreen Slider"/>
 									<span class="new">The Duncan Trussell Family Hour</span>
 								</a>
 							</div>
@@ -633,34 +514,30 @@
 						<div class="layout-item col-sm-4 col-lg-2">
 							<div class="layout-img">
 								<a href="http://chrisryanphd.com/tangentially-speaking/" target="_blank">
-									<img src="images/podcasts/tangent.jpg" alt="Fullscreen Slider">
+									<img src="images/podcasts/tangent.jpg" alt="Fullscreen Slider"/>
 									<span class="new">Tangentially Speaking</span>
 								</a>
 							</div>
-							</a>
-						</div>
-						<div class="layout-item col-sm-4 col-lg-2">
-							<div class="layout-img">
-								<a href="http://matrixmasters.net/salon/" target="_blank">
-									<img src="images/podcasts/salon.jpg" alt="Fullscreen Slider">
-									<span class="new">Psychedelic Salon</span>
-								</a>
-							</div>
-						</div>
-						<div class="layout-item col-sm-4 col-lg-2">
-							<a href="http://smartdrugsmarts.com/" target="_blank">
-								<div class="layout-img">
-									<img src="images/podcasts/smart.jpg" alt="Fullscreen Slider">
-									<span class="new">Smart Drug Smarts</span>
-								</div>
+						</a>
+					</div>
+					<div class="layout-item col-sm-4 col-lg-2">
+						<div class="layout-img">
+							<a href="http://matrixmasters.net/salon/" target="_blank">
+								<img src="images/podcasts/salon.jpg" alt="Fullscreen Slider"/>
+								<span class="new">Psychedelic Salon</span>
 							</a>
 						</div>
 					</div>
+					<div class="layout-item col-sm-4 col-lg-2">
+						<a href="http://smartdrugsmarts.com/" target="_blank">
+							<div class="layout-img">
+								<img src="images/podcasts/smart.jpg" alt="Fullscreen Slider"/>
+								<span class="new">Smart Drug Smarts</span>
+							</div>
+						</a>
+					</div>
 				</div>
-
 			</section>
-
-
 			<section id="websites" class="section section-white section-listing">
 				<div class="container-fluid">
 					<h2 class="section-heading text-center">Websites</h2>
@@ -668,42 +545,42 @@
 						<div class="layout-item col-sm-4 col-lg-2">
 							<div class="layout-img">
 								<a href="http://norml.org" target="_blank">
-									<img src="images/sites/norml.jpg" alt="NORML">
+									<img src="images/sites/norml.jpg" alt="NORML"/>
 								</a>
 							</div>
 						</div>
 						<div class="layout-item col-sm-4 col-lg-2">
 							<div class="layout-img">
 								<a href="http://reset.me" target="_blank">
-									<img src="images/sites/reset.jpg" alt="Fullscreen Slider">
+									<img src="images/sites/reset.jpg" alt="Fullscreen Slider"/>
 								</a>
 							</div>
 						</div>
 						<div class="layout-item col-sm-4 col-lg-2">
 							<div class="layout-img">
 								<a href="http://erowid.org" target="_blank">
-									<img src="images/sites/erowid.jpg" alt="Fullscreen Slider">
+									<img src="images/sites/erowid.jpg" alt="Fullscreen Slider"/>
 								</a>
 							</div>
 						</div>
 						<div class="layout-item col-sm-4 col-lg-2">
 							<div class="layout-img">
 								<a href="http://www.shroomery.org" target="_blank">
-									<img src="images/sites/shroom.jpg" alt="Fullscreen Slider">
+									<img src="images/sites/shroom.jpg" alt="Fullscreen Slider"/>
 								</a>
 							</div>
 						</div>
 						<div class="layout-item col-sm-4 col-lg-2">
 							<div class="layout-img">
 								<a href="http://www.maps.org" target="_blank">
-									<img src="images/sites/maps.jpg" alt="Fullscreen Slider">
+									<img src="images/sites/maps.jpg" alt="Fullscreen Slider"/>
 								</a>
 							</div>
 						</div>
 						<div class="layout-item col-sm-4 col-lg-2">
 							<div class="layout-img">
 								<a href="http://www.drugpolicy.org/" target="_blank">
-									<img src="images/sites/policy.jpg" alt="Fullscreen Slider">
+									<img src="images/sites/policy.jpg" alt="Fullscreen Slider"/>
 								</a>
 							</div>
 						</div>
@@ -712,111 +589,97 @@
 						<div class="layout-item col-sm-4 col-lg-2">
 							<div class="layout-img">
 								<a href="https://dancesafe.org/" target="_blank">
-									<img src="images/sites/dancesafe.jpg" alt="NORML">
+									<img src="images/sites/dancesafe.jpg" alt="NORML"/>
 								</a>
 							</div>
 						</div>
 						<div class="layout-item col-sm-4 col-lg-2">
 							<div class="layout-img">
 								<a href="http://awareproject.org/" target="_blank">
-									<img src="images/sites/awareproject.jpg" alt="Fullscreen Slider">
+									<img src="images/sites/awareproject.jpg" alt="Fullscreen Slider"/>
 								</a>
 							</div>
 						</div>
 						<div class="layout-item col-sm-4 col-lg-2">
 							<div class="layout-img">
 								<a href="http://www.psychedelicsociety.org.uk/" target="_blank">
-									<img src="images/sites/psysociety.jpg" alt="Fullscreen Slider">
+									<img src="images/sites/psysociety.jpg" alt="Fullscreen Slider"/>
 								</a>
 							</div>
 						</div>
 						<div class="layout-item col-sm-4 col-lg-2">
 							<div class="layout-img">
 								<a href="http://www.zendoproject.org/" target="_blank">
-									<img src="images/sites/zendo.jpg" alt="Fullscreen Slider">
+									<img src="images/sites/zendo.jpg" alt="Fullscreen Slider"/>
 								</a>
 							</div>
 						</div>
 						<div class="layout-item col-sm-4 col-lg-2">
 							<div class="layout-img">
 								<a href="http://www.thinkwilder.com/" target="_blank">
-									<img src="images/sites/twip.jpg" alt="Fullscreen Slider">
+									<img src="images/sites/twip.jpg" alt="Fullscreen Slider"/>
 								</a>
 							</div>
 						</div>
 						<div class="layout-item col-sm-4 col-lg-2">
 							<div class="layout-img">
 								<a href="http://www.920coalition.org/" target="_blank">
-									<img src="images/sites/920.jpg" alt="Fullscreen Slider">
+									<img src="images/sites/920.jpg" alt="Fullscreen Slider"/>
 								</a>
 							</div>
 						</div>
 					</div>
 				</div>
 			</section>
-
-			<!-- Books
-			================================= -->
 			<section id="books" class="section section-gray section-listing">
 				<div class="container-fluid">
 					<h2 class="section-heading text-center">Books</h2>
 					<div class="layout-list row" style="text-align: center;">
 						<div class="layout-item col-sm-4 col-lg-2">
-								<div class="layout-img">
-									<a href="http://amzn.to/1Pp0tDI" target="_blank">
-										<img src="images/books/psychexplorers.jpg" alt="Fullscreen Slider">
-									</a>
-									<!-- <span class="new">new</span> -->
-								</div>
+							<div class="layout-img">
+								<a href="http://amzn.to/1Pp0tDI" target="_blank">
+									<img src="images/books/psychexplorers.jpg" alt="Fullscreen Slider"/>
+								</a>
+							</div>
 						</div>
 						<div class="layout-item col-sm-4 col-lg-2">
 							<div class="layout-img">
 								<a href="http://amzn.to/1U25HGJ" target="_blank">
-									<img src="images/books/foodofgods.jpg" alt="Fullscreen Slider">
+									<img src="images/books/foodofgods.jpg" alt="Fullscreen Slider"/>
 								</a>
-								<!-- <span class="new">new</span> -->
 							</div>
 						</div>
 						<div class="layout-item col-sm-4 col-lg-2">
 							<div class="layout-img">
 								<a href="http://amzn.to/1Pp0Ait" target="_blank">
-									<img src="images/books/healing.jpg" alt="Fullscreen Slider">
+									<img src="images/books/healing.jpg" alt="Fullscreen Slider"/>
 								</a>
-								<!-- <span class="new">new</span> -->
 							</div>
 						</div>
 						<div class="layout-item col-sm-4 col-lg-2">
 							<div class="layout-img">
 								<a href="http://amzn.to/1PCHeHt" target="_blank">
-									<img src="images/books/minds.jpg" alt="Fullscreen Slider">
+									<img src="images/books/minds.jpg" alt="Fullscreen Slider"/>
 								</a>
-								<!-- <span class="new">new</span> -->
 							</div>
 						</div>
 						<div class="layout-item col-sm-4 col-lg-2">
 							<div class="layout-img">
 								<a href="http://amzn.to/1Pp0Fmi" target="_blank">
-									<img src="images/books/science.jpg" alt="Fullscreen Slider">
+									<img src="images/books/science.jpg" alt="Fullscreen Slider"/>
 								</a>
-								<!-- <span class="new">new</span> -->
 							</div>
 						</div>
 						<div class="layout-item col-sm-4 col-lg-2">
 							<div class="layout-img">
 								<a href="http://amzn.to/1Pp0LdC" target="_blank">
-									<img src="images/books/doorway.jpg" alt="Fullscreen Slider">
+									<img src="images/books/doorway.jpg" alt="Fullscreen Slider"/>
 								</a>
-								<!-- <span class="new">new</span> -->
 							</div>
 						</div>
 					</div>
 				</div>
-
 			</section>
-
-
-			<!-- Documentaries
-			================================= -->
 			<section id="documentaries" class="section section-white section-listing">
 				<div class="container-fluid">
 					<h2 class="section-heading text-center">Documentaries</h2>
@@ -824,106 +687,87 @@
 						<div class="layout-item col-sm-4 col-lg-2">
 							<div class="layout-img">
 								<a href="http://amzn.to/1NoW71W" target="_blank">
-									<img src="images/docs/ayaawake.jpg" alt="Fullscreen Slider">
+									<img src="images/docs/ayaawake.jpg" alt="Fullscreen Slider"/>
 								</a>
-								<!-- <span class="new">new</span> -->
 							</div>
 						</div>
 						<div class="layout-item col-sm-4 col-lg-2">
 							<div class="layout-img">
 								<a href="https://www.youtube.com/watch?v=LtT6Xkk-kzk" target="_blank">
-									<img src="images/docs/dmt.jpg" alt="Fullscreen Slider">
+									<img src="images/docs/dmt.jpg" alt="Fullscreen Slider"/>
 								</a>
-								<!-- <span class="new">new</span> -->
 							</div>
 						</div>
 						<div class="layout-item col-sm-4 col-lg-2">
 							<div class="layout-img">
 								<a href="http://amzn.to/1U22R4y" target="_blank">
-									<img src="images/docs/magictrip.jpg" alt="Fullscreen Slider">
+									<img src="images/docs/magictrip.jpg" alt="Fullscreen Slider"/>
 								</a>
-								<!-- <span class="new">new</span> -->
 							</div>
 						</div>
 						<div class="layout-item col-sm-4 col-lg-2">
 							<div class="layout-img">
 								<a href="http://amzn.to/1U22Yxd" target="_blank">
-									<img src="images/docs/neurons.jpg" alt="Fullscreen Slider">
+									<img src="images/docs/neurons.jpg" alt="Fullscreen Slider"/>
 								</a>
-								<!-- <span class="new">new</span> -->
 							</div>
 						</div>
 						<div class="layout-item col-sm-4 col-lg-2">
 							<div class="layout-img">
 								<a href="http://amzn.to/1NoYn9d" target="_blank">
-									<img src="images/docs/substance.jpg" alt="Fullscreen Slider">
+									<img src="images/docs/substance.jpg" alt="Fullscreen Slider"/>
 								</a>
-								<!-- <span class="new">new</span> -->
 							</div>
 						</div>
 						<div class="layout-item col-sm-4 col-lg-2">
 							<div class="layout-img">
 								<a href="https://www.youtube.com/watch?v=nbCXDmOPuL8" target="_blank">
-									<img src="images/docs/tolsd.jpg" alt="Fullscreen Slider">
+									<img src="images/docs/tolsd.jpg" alt="Fullscreen Slider"/>
 								</a>
-								<!-- <span class="new">new</span> -->
 							</div>
 						</div>
 					</div>
 				</div>
-
 			</section>
-
 			<section id="get-involved" class="how-it-works-section section">
-
 				<div class="container-fluid">
-
 					<h2 class="section-heading text-center">Get involved</h2>
-
 					<div class="hiw-row row">
-
-						<!-- HOW IT WORKS - ITEM 1 -->
 						<div class="col-sm-6 col-md-3" data-animation="fadeIn">
 							<div class="hiw-item">
-								<img class="hiw-item-picture" src="images/cta/firechat.jpg" alt="">
+								<img class="hiw-item-picture" src="images/cta/firechat.jpg" alt=""/>
 								<div class="hiw-item-text">
 									<span class="hiw-item-icon">1</span>
 									<h4 class="hiw-item-title">Share Experiences</h4>
 									<p class="hiw-item-description">Change happens one conversation at a time. The most powerful way to shift the public perception of psychedelics is to share your personal story.
-									<a href="http://psychedelicchat.com" class="btn btn-primary bottom-btn"><i class="fa fa-comment"></i>Join Psychedelic Chat</a>
+									
+										<a href="http://psychedelicchat.com" class="btn btn-primary bottom-btn">
+											<i class="fa fa-comment"></i>Join Psychedelic Chat
+									
+										</a>
 									</p>
 								</div>
 							</div>
 						</div>
-
-						<!-- HOW IT WORKS - ITEM 2 -->
 						<div class="col-sm-6 col-md-3" data-animation="fadeIn">
 							<div class="hiw-item even">
-								<img class="hiw-item-picture" src="images/cta/congress.jpg" alt="">
+								<img class="hiw-item-picture" src="images/cta/congress.jpg" alt=""/>
 								<div class="hiw-item-text">
 									<span class="hiw-item-icon">2</span>
 									<h4 class="hiw-item-title">Contact representatives</h4>
 									<p class="hiw-item-description">Cannabis is becoming legal all around the world. Finding and contacting your local representative is easy and has a real impact.
-									<a href="http://opencongress.org">
-									<img alt="OpenCongress -" src="images/sites/open-congress.png" width="250">
-									</a>
-<!-- 									<div class="input-group">
-										<input type="text" class="form-control" placeholder="ZIP code">
-										<span class="input-group-btn">
-											<button class="btn btn-default" type="button">Find</button>
-										</span>
-									</div> -->
+									
+										<a href="http://opencongress.org">
+											<img alt="OpenCongress -" src="images/sites/open-congress.png" width="250"/>
+										</a>
 									</p>
 								</div>
 							</div>
 						</div>
-
 						<div class="hidden-md hidden-lg clear"></div>
-
-						<!-- HOW IT WORKS - ITEM 3 -->
 						<div class="col-sm-6 col-md-3" data-animation="fadeIn">
 							<div class="hiw-item">
-								<img class="hiw-item-picture" src="images/cta/sharesite.jpg" alt="">
+								<img class="hiw-item-picture" src="images/cta/sharesite.jpg" alt=""/>
 								<div class="hiw-item-text">
 									<span class="hiw-item-icon">3</span>
 									<h4 class="hiw-item-title">Share this website</h4>
@@ -932,80 +776,46 @@
 								</div>
 							</div>
 						</div>
-
-						<!-- HOW IT WORKS - ITEM 4 -->
 						<div class="col-sm-6 col-md-3" data-animation="fadeIn">
 							<div class="hiw-item even">
-								<img class="hiw-item-picture" src="images/cta/shop.jpg" alt="">
+								<img class="hiw-item-picture" src="images/cta/shop.jpg" alt=""/>
 								<div class="hiw-item-text">
 									<span class="hiw-item-icon">4</span>
 									<h4 class="hiw-item-title">Show your support</h4>
 									<p class="hiw-item-description">Our gear looks great, shows you support psychedelic freedom and makes sparking conversations a breeze. Plus 50% goes support the cause.
-										<a href="http://society6.com/psychedelicchat" target="_blank" class="btn btn-primary bottom-btn"><i class="fa fa-shopping-cart"></i>Visit the store</a>
+									
+										<a href="http://society6.com/psychedelicchat" target="_blank" class="btn btn-primary bottom-btn">
+											<i class="fa fa-shopping-cart"></i>Visit the store
+									
+										</a>
 									</p>
 								</div>
 							</div>
 						</div>
-
 					</div>
-
 				</div>
-
 			</section>
-
-			<!-- FOOTER
-			================================= -->
 			<section id="footer" class="footer-section section section-dark">
-
 				<div class="container">
-
 					<h3 class="footer-logo">
-						<img width="400" src="images/logo.svg" alt="Legalize Psychedelics">
+						<img width="400" src="images/logo.svg" alt="Legalize Psychedelics"/>
 					</h3>
-
 					<div class="footer-socmed">
-					<a type="button" class="typeform-share link btn btn-default" href="https://psychedelics.typeform.com/to/iK2YJC" data-mode="1" target="_blank">
-					  <span>Get In Touch</span>
-					</a>
+						<a type="button" class="typeform-share link btn btn-default" href="https://psychedelics.typeform.com/to/iK2YJC" data-mode="1" target="_blank">
+							<span>Get In Touch</span>
+						</a>
 					</div>
-
 					<div class="footer-copyright">
 						Copyright &copy; 2018 <a href="https://dtr.is/">PsychonautWiki</a>. A <a href="https://dtr.is/">darktriad</a> project.
 					</div>
-
-					<style>
-						.tag {
-							position: relative;
-							line-height: 1.4;
-							font-size: 0.8em;
-							padding: 0;
-							margin: .5em auto 2em auto;
-							text-align: center;
-							color: #e6e6e6;
-						}
-
-						.tag img {
-							margin: 0 0.5rem;
-						}
-
-						.tag img.pw {
-							width: 30px;
-							
-							margin-bottom: -.7em;
-						}
-					</style>
-
 					<div class="tag">
-						<a href="https://psychonautwiki.org" target="_blank"><img src="pw.svg" class="pw" /></a>
+						<a href="https://psychonautwiki.org" target="_blank">
+							<img src="pw.svg" class="pw" />
+						</a>
 					</div>
 				</div>
 			</section>
-
 		</div>
-
 		<script src="main.js"></script>
-
 	</body>
-
 </html>
-
