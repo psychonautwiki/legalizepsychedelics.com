@@ -18,25 +18,32 @@
 		<link rel="stylesheet" href="css/style.css"/>
 
 		<style>
+			.navbar-logo img {
+				display: inline-block;
+    			vertical-align: middle;
+    			max-height: 40px;
+    			width: 191px;
+			}
+
+			.hero-section .hero-heading {
+				display: flex;
+    			flex-flow: column wrap;
+    			align-items: center;
+			}
+
 			.hero-section .hero-heading img {
-				max-width: 30vw;
+				max-width: 500px;
+				margin: 20px;
 			}
 
 			.hero-section .hero-heading .hero-tagline {
+				text-align: center;
 				margin: 1em 0;
 			}
 
-			.hero-section {
-				height: 100vh;
-			}
-
-			.hero-content, .hero-content-inner {
-				height: 90vh;
-			}
-
-			@media only screen and (max-width: 600px) {
-				body {
-					background-color: lightblue;
+			@media only screen and (max-width: 500px) {
+				.hero-section .hero-heading img {
+					max-width: 90vh;
 				}
             }
             
@@ -56,7 +63,6 @@
 
             .tag img.pw {
                 width: 30px;
-                
                 margin-bottom: -.7em;
             }
 		</style>
@@ -73,7 +79,7 @@
 							<span class="icon-bar"></span>
 						</button>
 						<a class="navbar-logo navbar-brand anchor-link" href="#hero">
-							<img src="images/logo-small.png" alt="Legalize Psychedelics"/>
+							<img src="images/logo-small.svg" alt="Legalize Psychedelics"/>
 						</a>
 					</div>
 					<nav id="navigation" class="navigation navbar-collapse collapse navbar-right">
@@ -102,13 +108,6 @@
 							<li class="header-action-button">
 								<a href="#get-involved" class="btn btn-primary">
 									<i class="fa fa-thumbs-o-up" style="font-size: 18px; padding-right: 5px;"></i>Get Involved
-								
-								
-								
-								
-								
-								
-								
 								</a>
 							</li>
 						</ul>
@@ -126,14 +125,12 @@
 						<img src="images/logo.svg" />
 						<p class="hero-tagline">
 							Psychedelics have enormous medicinal, therapeutic and spiritual potential.
-							
 							<br/>We believe the exploration of consciousness is a human right.
-						
+						</p>
+						<p class="hero-buttons">
+							<a href="#about" class="learn-btn btn btn-lg btn-primary">LEARN MORE</a>
 						</p>
 					</div>
-					<p class="hero-buttons">
-						<a href="#about" class="learn-btn btn btn-lg btn-primary">LEARN MORE</a>
-					</p>
 				</div>
 			</section>
 			<section id="headline" class="headline-section section-dark section top-quote">
@@ -143,8 +140,7 @@
 						<div class="col-md-10 col-md-offset-1">
 							<p class="headline-text">
 								<em>"Taking LSD was a profound experience, one of the most important things in my life. LSD shows you that there’s another side to the coin, and you can’t remember it when it wears off, but you know it. It reinforced my sense of what was important creating great things instead of making money, putting things back into the stream of history and of human consciousness as much as I could."</em>
-								<br/>
-								<strong>- Steve Jobs</strong>
+								<br/><strong>- Steve Jobs</strong>
 							</p>
 						</div>
 					</div>
