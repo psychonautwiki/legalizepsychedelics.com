@@ -928,10 +928,6 @@ img.icon-list-icon {
 	.navbar-default .navigation {
 		background-color: rgba(255,255,255,0.95);
 	}
-	.navigation.collapsing, .navigation.collapse.in {
-		bottom: 0;
-		opacity: 1;
-	}
 	.navigation:before {
 		content: "";
 		display: inline-block;

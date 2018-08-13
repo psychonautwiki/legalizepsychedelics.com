@@ -1,4 +1,4 @@
-const $ = jQuery = require('jquery');
+const $ = jQuery = require('./jquery');
 
 jQuery(document).on('ready', function() {
 
